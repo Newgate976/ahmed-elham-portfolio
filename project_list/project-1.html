@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="fr">
   <head>
@@ -269,4 +270,277 @@
       crossorigin="anonymous"
     ></script>
   </body>
+=======
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Au-delà des coraux - Projet</title>
+    <meta
+      name="Un projet"
+      content="Détail du projet : objectif, stack, fonctionnalités et captures d'écran."
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS global -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+
+    <!-- CSS page  -->
+     <link rel="stylesheet" type="text/css" href="../assets/css/projects_list/project1.css">
+  </head>
+
+  <body class="bg-portfolio">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-portfolio-2 fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="assets/img/logo.png" alt="Logo" height="28" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../projects.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO  -->
+      <header class="hero">
+        <div class="container text-center">
+          <h1 class="display-3 fw-bold mb-2">Au-delà des coraux</h1>
+          <p class="lead mb-4">Courte description du projet</p>
+
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a class="btn btn-portfolio px-4" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              Voir le GitHub
+            </a>
+            <a class="btn btn-outline-portfolio px-4" href="../projects.html">
+              Revenir aux projets
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- CONTENU -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <!-- Infos stack -->
+            <div class="col-12 col-lg-5">
+              <div class="meta-card p-4">
+                <p class="section-label mb-3">Objectifs • Langages • Frameworks • API</p>
+
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="meta-title">Objectifs</div>
+                    <ul class="meta-list mb-0">
+                      <li>Objectif 1</li>
+                      <li>Objectif 2</li>
+                      <li>Objectif 3</li>
+                    </ul>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="meta-title">Stack</div>
+                    <p class="mb-0">
+                      HTML, CSS, Bootstrap, JavaScript
+                    </p>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="meta-title">Outils / Frameworks</div>
+                    <p class="mb-0">
+                      Bootstrap 5 •
+                    </p>
+                  </div>
+
+                  <!-- (si besoin)
+                  <div class="col-12">
+                    <div class="meta-title">API </div>
+                    <p class="mb-0 ">
+                      (ex: OpenWeather / TMDB / etc.)
+                    </p>
+                  </div>
+                   -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousels captures -->
+            <div class="col-12 col-lg-7">
+              <!-- Desktop -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="section-label">Version Bureau</span>
+                </div>
+
+                <div id="carouselDesktop" class="carousel slide carousel-wrap" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="2"></button>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/projects/projet1/desktop-1.png" alt="Projet 1 - desktop 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/projects/projet1/desktop-2.png" alt="Projet 1 - desktop 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/projects/projet1/desktop-3.png" alt="Projet 1 - desktop 3">
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Tablet -->
+              <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="section-label">Version Tablette</span>
+                </div>
+
+                <div id="carouselTablet" class="carousel slide carousel-wrap" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTablet" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselTablet" data-bs-slide-to="1"></button>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/projects/projet1/tablet-1.png" alt="Projet 1 - tablette 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/projects/projet1/tablet-2.png" alt="Projet 1 - tablette 2">
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTablet" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselTablet" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Mobile -->
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="section-label">Version Mobile</span>
+                </div>
+
+                <div id="carouselMobile" class="carousel slide carousel-wrap" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2"></button>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/projects/projet1/mobile-1.png" alt="Projet 1 - mobile 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/projects/projet1/mobile-2.png" alt="Projet 1 - mobile 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/projects/projet1/mobile-3.png" alt="Projet 1 - mobile 3">
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-portfolio-2 py-4">
+      <div class="container text-center">
+        <p class="mb-3">
+          Disponible pour missions freelance et opportunités professionnelles.
+        </p>
+
+        <div class="d-flex justify-content-center gap-4 flex-wrap">
+          <a class="btn btn-portfolio" href="contact.html">Me contacter</a>
+          <a class="footer-link" href="mailto:tonemail@example.com">📧 Email</a>
+          <a class="footer-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+          <a class="footer-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+        </div>
+
+        <small class="d-block mt-3">© 2026 — AHMED El-Ham</small>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+>>>>>>> 438b7e887587c1403f91e292277b51db7c7ee1d6
 </html>
