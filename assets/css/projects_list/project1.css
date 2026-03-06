@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  /* évite que le fixed-top cache le contenu */
 body { padding-top: 72px; }
 
@@ -30,37 +29,4 @@ display: block;
 .section-label{
 font-weight: 600;
 color: var(--text);
-=======
- /* évite que le fixed-top cache le contenu */
-body { padding-top: 72px; }
-
-/* petite carte “infos” */
-.meta-card{
-background: rgba(30, 41, 59, 0.35);
-border: 1px solid rgba(148,163,184,0.15);
-border-radius: 16px;
-}
-.meta-title{
-font-size: .9rem;
-color: var(--muted);
-margin-bottom: .25rem;
-}
-.meta-list li{ margin-bottom: .25rem; }
-
-/* carousels */
-.carousel-wrap{
-background: rgba(30, 41, 59, 0.25);
-border: 1px solid rgba(148,163,184,0.12);
-border-radius: 16px;
-overflow: hidden;
-}
-.carousel-wrap img{
-width: 100%;
-height: auto;
-display: block;
-}
-.section-label{
-font-weight: 600;
-color: var(--text);
->>>>>>> 438b7e887587c1403f91e292277b51db7c7ee1d6
 }
