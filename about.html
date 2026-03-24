@@ -27,20 +27,35 @@
 
     <!-- CSS global -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+    <!-- JS scripts-->
+     <script src="assets/scripts.js" defer></script>
   </head>
 
   <body class="bg-portfolio">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-portfolio-2 fixed-top">
       <div class="container">
+
+        <!-- Logo -->
         <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo.png" alt="Logo" height="28">
+          <img src="https://via.placeholder.com/400x250" alt="Logo" height="28">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Bloc droite -->
+        <div class="d-flex align-items-center ms-auto gap-2">
 
+          <!-- Bouton thème -->
+          <button class="btn btn-portfolio px-4 py-2" id="theme-toggle">☀️</button>
+
+          <!-- Burger -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto gap-lg-3">
             <li class="nav-item">
@@ -57,7 +72,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
 
 

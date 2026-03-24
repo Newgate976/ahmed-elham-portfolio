@@ -4,18 +4,24 @@
     --primary: #2563EB;  /* bleu boutons */
     --text: #e2e8f0;     /* texte clair */
     --muted: #94a3b8;    /* texte secondaire */
+    --link_color:#3B82F6; /* couleurs des liens */
+    --btn_txt_color:#fff; /* couleurs textes boutton*/
     --family:Montserrat;   /* famille principale */
     --family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     --family-title: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    --link_color:#3B82F6; /* couleurs des liens */
+    --hero-overlay: rgba(15, 23, 42, 0.7);
     }
 
 body {
-background: var(--bg);
-color: var(--text);
+    background: var(--bg);
+    color: var(--text);
+    transition: 1s ease;
 }
 
+
+
 /* Navbar */
+
 .nav-link {
     color: var(--link_color);
     text-decoration: none;
@@ -27,13 +33,15 @@ color: var(--text);
 
 /* Hero background */
 .hero {
-min-height: 520px;
-display: flex;
-align-items: center;
-background:
-    linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)),
-    url("../img/hero-bg2.jpg") center/cover no-repeat;
+    position:relative;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+        url("../img/hero-bg2.jpg") center/cover no-repeat;
 }
+
 
 .bg-portfolio {
 background: var(--bg);
@@ -42,6 +50,8 @@ background: var(--bg);
 .bg-portfolio-2 {
 background: var(--bg-2);
 }
+
+
 
 /* Footer */
 .footer-link {
@@ -59,12 +69,12 @@ background: var(--bg-2);
 .btn-portfolio {
 background: var(--primary);
 border-color: var(--primary);
-color: #fff;
+color: var(--btn_txt_color);
 }
 .btn-portfolio:hover {
     background: red;
     filter:brightness(0.6);
-    color: #fff;
+    color: var(--btn_txt_color);
 }
 
 
@@ -74,8 +84,9 @@ color: #fff;
 }
 .btn-outline-portfolio:hover {
     background: var(--primary);
-    color: #fff;
+    color: var(--btn_txt_color);
 }
+
 
 
 /* Textes */
@@ -94,3 +105,17 @@ p
     color: var(--muted);
     font-family: var(--family);
 }
+
+/* LightMode*/
+.light{
+    --bg : #ffffff;
+    --bg-2 : #78acff;
+    --primary: #d8d8da;
+    --text : #000;
+    --muted : #000000;
+    --link_color:#dae6fa;
+    --btn_txt_color:#000;
+    --hero-overlay: rgba(114, 138, 196, 0.7);
+}
+
+
