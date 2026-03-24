@@ -30,11 +30,16 @@ const btn = document.getElementById("theme-toggle");
 btn.addEventListener("click", () => {
   document.body.classList.toggle("light");
 
-  if (document.body.classList.contains("light")) {
-    btn.textContent = "🌙";
-  } else {
-    btn.textContent = "☀️";
-  }
+  const theme = document.body.classList.contains("light") ? "light" : "dark";
+  localStorage.setItem("theme", theme);
+
+  btn.textContent = theme === "light" ? "🌙" : "☀️";
 });
 
-localStorage
+const saved_theme = localStorage.getItem("theme");
+
+if (saved_theme === "light") {
+  document.body.classList.add("light");
+  btn.textContent = "🌙";
+} else{
+  btn.textContent = "☀️"};
