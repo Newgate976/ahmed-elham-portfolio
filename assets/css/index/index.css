@@ -5,7 +5,16 @@ border: 1px solid rgba(148, 163, 184, 0.15);
 border-radius: 16px;
 overflow: hidden;
 }
+.project-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s;
+}
 
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .project-thumb {
 background: #3b82f6; /* placeholder bleu */
 aspect-ratio: 16 / 9;
