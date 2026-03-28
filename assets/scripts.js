@@ -29,7 +29,7 @@ const btn = document.getElementById("theme-toggle");
 
 btn.addEventListener("click", () => {
   document.body.classList.toggle("light");
-
+z
   const theme = document.body.classList.contains("light") ? "light" : "dark";
   localStorage.setItem("theme", theme);
 

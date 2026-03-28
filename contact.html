@@ -26,11 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS global -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="stylesheet" href="assets/css/contact/contact.css">
 
     <!-- JS scripts-->
      <script src="assets/scripts.js" defer></script>
+     <script src="assets/script/contact/contact.js" defer></script>
   </head>
 
   <body class="bg-portfolio">
@@ -40,8 +42,9 @@
       <div class="container">
 
         <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="https://via.placeholder.com/400x250" alt="Logo" height="28">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="assets/img/Logo.jpeg" alt="Ahmed" id="logoIMG">
+          <span class="fw-bold">Ahmed El-Ham</span>
         </a>
 
         <!-- Bloc droite -->
@@ -89,7 +92,7 @@
           Je serais ravi d’en discuter avec vous.
         </p>
 
-        <a class="btn btn-portfolio px-4" href="#contact-cards">Contactez-moi</a>
+        <a class="btn btn-portfolio px-4" href="#contact-form">Contactez-moi</a>
       </div>
     </header>
 
@@ -160,6 +163,43 @@
           </div>
         </div>
       </section>
+
+      <!-- FORMULAIRE DE CONTACT-->
+      <section class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+
+            <div class="bg-portfolio-2 p-4 rounded-4 shadow">
+              <h2 class="text-center mb-4">Contact</h2>
+
+              <form id="contact-form">
+
+                <div class="mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Votre nom" required>
+                </div>
+
+                <div class="mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Votre email" required>
+                </div>
+
+                <div class="mb-3">
+                  <input type="text" name="title" class="form-control" placeholder="L'objet de votre email" required>
+                </div>
+
+                <div class="mb-3">
+                  <textarea name="message" class="form-control" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-portfolio">Envoyer</button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -171,6 +211,10 @@
         <small class="d-block mt-3">© 2026 — AHMED El-Ham</small>
       </div>
     </footer>
+
+
+    <!-- emailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <!-- Bootstrap JS -->
     <script
