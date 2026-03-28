@@ -41,7 +41,8 @@ body {
 /* Hero background */
 .hero {
     position: relative;
-    height: 100vh; /* prend toute la hauteur écran */
+    min-height: 100dvh;
+    padding: 100px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +131,12 @@ p
 
 /* media queries */
 @media (max-width: 768px) {
-  #logoIMG {
+    .hero{
+        min-height: 80vh;
+        height: auto;
+        padding: 80px 20px;
+    }
+    #logoIMG {
     width: 35px;
     height: 35px;
   }

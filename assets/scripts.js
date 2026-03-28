@@ -13,33 +13,31 @@ window.addEventListener("scroll", () => {
   });
 });
 
-const projets = [
-  { titre: "Portfolio", desc: "..."},
-];
 
-const menuBtn = document.querySelector(".btn");
-menuBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
-});
 
-"Développeur Full Stack..."
+
 
 // LightMode
 const btn = document.getElementById("theme-toggle");
 
+const updateIcon = () => {
+  const isLight = document.body.classList.contains("light");
+  btn.textContent = isLight ? "🌙" : "☀️";
+};
+
 btn.addEventListener("click", () => {
   document.body.classList.toggle("light");
-z
+
   const theme = document.body.classList.contains("light") ? "light" : "dark";
   localStorage.setItem("theme", theme);
 
-  btn.textContent = theme === "light" ? "🌙" : "☀️";
+  updateIcon();
 });
 
 const saved_theme = localStorage.getItem("theme");
 
 if (saved_theme === "light") {
   document.body.classList.add("light");
-  btn.textContent = "🌙";
-} else{
-  btn.textContent = "☀️"};
+}
+
+updateIcon();
